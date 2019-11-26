@@ -1,0 +1,79 @@
+body
+{
+    background-color: #f1f3f4;
+    font-family: sans-serif;
+    height: inherit;    
+}
+.top-nav-bar {
+    height: 80px;
+    top: 10px;
+    position: sticky;
+    background: #ffff;
+    margin-bottom: 50px;
+    border-bottom: 1px solid black;
+    z-index: 2;
+}
+.logo {
+    height: 50px;
+    margin: 10px 4px;
+}
+
+.controle {
+    margin-top: 9px;
+    margin-left: 20px;
+    border: 1px solid black;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: none;
+}
+     
+.input
+{
+    background: black;
+    border: 10px solid black;
+    margin: 10px 20px 2px 0;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+}
+.search-box
+{
+    display: inline-flex;
+    width: 60%;
+}
+.search
+{
+    color: #fff;
+}
+
+.menubar
+{
+    display: subgrid;
+    float: right ;
+}
+
+.menubar ul li
+{
+    border-left: 1px solid #fff;
+    list-style-type: none;
+    padding: 1px 35px;
+    text-align: center;
+    background-color: black;
+    cursor: pointer;
+}
+
+.menubar ul li a
+{
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+

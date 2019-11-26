@@ -1,0 +1,244 @@
+/*
+Geral
+*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #4d4d4d;
+}
+
+
+
+h1 {
+    font-family: serif;
+    color: #4d4d4d
+}
+
+h2,
+h3 {
+    margin: 0;
+    font-family: 'Open Sans';
+    font-weight: 700;
+}
+
+.botao {
+    color: azure;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: skyblue;
+    font-size: .9em;
+    border-radius: 3px;
+}
+
+
+/*
+Navegação
+*/
+
+nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 05px;
+
+}
+
+nav > a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 28x;
+    font-family: Pacifico, cursive;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 5px 0;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+}
+
+#logo img {
+    width: 60%;
+    padding: px 5px;
+}
+
+/*
+Cabeçalho
+*/
+
+header {
+    /*background-image: url('../img/oficina3.png');*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: whitesmoke;
+    background-size: contain;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0px 20px 20px;
+}
+
+header p {
+    margin-bottom: 2em;
+}
+
+/*
+Sobre
+*/
+
+#loja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 20px 20px;
+    background-color: white;
+    color: black;
+}
+
+#loja p {
+    margin-bottom: 2.5em;
+    max-height: 1000px;
+    text-align: center;
+}
+
+/*Portifolio*/
+
+#portifolio {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+#portifolio h2 {
+    margin-bottom: 20px;
+}
+
+#portifolio img {
+    width: 40%;
+    align-items: center;
+}
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/*Footer*/
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: gray;
+}
+
+/*Media queries*/
+
+@media screen and (min-width: 768px) {
+
+    /*Navegaçao
+    */
+
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul {
+        flex-direction: row;
+        width: 70%;
+    }
+
+    /*cabeçalho
+    */
+
+    header {
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+
+    /*sobre
+    */
+
+    #sobre {
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;
+        text-align: justify;
+    }
+
+    /*portifolio
+    */
+
+    #portifolio {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #portifolio h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #portifolio img {
+
+        width: 20%;
+    }
+
+    #contato {
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #contato img {
+        width: 100%;
+    }
+
+    #contato h2,
+    #contato p {
+        width: 100%;
+    }
+
+    /*Loja
+    */
+
+    #loja2 img {
+
+        width: 20%;
+    }
+
+
+}
